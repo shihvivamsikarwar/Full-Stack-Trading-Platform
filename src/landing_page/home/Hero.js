@@ -7,14 +7,18 @@ function Hero() {
         <img
           src="media/images/homehero.png"
           alt="Hero Image"
-          className="mb-6"
+          className="mb-6 "
+          style={{ width: "70%", margin: "0 auto" }}
         ></img>
-        <h1 className="mt-5">Invest in everything</h1>
-        <p>
+        <h1 className="mt-5 fs-3">Invest in everything</h1>
+        <p className="fs-5 mt-2">
           Online platform to invest in stocks, derivatives, mutual funds, ETFs,
           bonds, and more.
         </p>
-        <button style={{ width: "30%", margin: "0 auto" }}>
+        <button
+          className="p-2 btn btn-primary fs-5 mt-4"
+          style={{ width: "15%", margin: "0 auto" }}
+        >
           Sign up for free
         </button>
       </div>
