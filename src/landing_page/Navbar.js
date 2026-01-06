@@ -2,9 +2,9 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg  bg-white bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg  bg-light border-bottom border-body bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand mx-5" href="#">
           <img
             src="media/images/logo.svg"
             style={{ width: "30%" }}
@@ -23,64 +23,39 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Link
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider"></hr>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">
-                Disabled
-              </a>
-            </li>
-          </ul>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Signup
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Support
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
           </form>
         </div>
       </div>
