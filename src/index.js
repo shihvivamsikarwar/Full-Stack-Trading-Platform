@@ -4,8 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import HomePage from "./landing_page/home/HomePage";
 import Navbar from "./landing_page/Navbar";
-import Footer from "./landing_page/Footer";
 import Signup from "./landing_page/signup/Signup";
+import AboutPage from "./landing_page/about/AboutPage";
+// import Pricing from "./landing_page/pricing/PricingPage";
+// import Products from "./landing_page/products/Products";
+// import Support from "./landing_page/support/SupportPage";
+import Footer from "./landing_page/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,11 +18,10 @@ root.render(
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/signup" element={<Signup />} />
-      {/* <Route path="/" element={<About />} />
-      <Route path="/" element={<Pricing />} />
-      <Route path="/" element={<Products />} />
-      <Route path="/" element={<Support />} />
-      <Footer /> */}
+      <Route path="/about" element={<AboutPage />} />
+      {/* <Route path="/pricing" element={<Pricing />} /> */}
+      {/* <Route path="/products" element={<Products />} /> */}
+      {/* <Route path="/support" element={<Support />} /> */} */}
     </Routes>
     <Footer />
   </BrowserRouter>
